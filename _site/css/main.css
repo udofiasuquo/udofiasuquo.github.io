@@ -141,9 +141,16 @@
 	.full-hero {
 		/*background-image: url(UDO.jpg);*/
 		background-color: #c7dbfc;
-		height: 50vh;
-
+		background-size: cover;   /*to resize background image*/
+		box-sizing: border-box;
+		height: 100vh;
+		padding-top: 10vh;
 	}
+
+	.hero-home {
+		background-image: url(/images/shark.jpg);
+		background-position: center top; /* to make image resize from center when the page is resized*/ 
+	} 
 
 	/* SOCIAL STYLES */
 	.social-link {
@@ -164,6 +171,11 @@
 		vertical-align: middle;
 		width: 2.5em;
 	}
+
+	/* footer social link*/
+	.footer .social-link {		
+		display: flex;
+	} /*end*/
 
 	.social-list {
 		list-style: none;
